@@ -3,5 +3,29 @@
     margin-left: 3rem;
     margin-bottom: 0.5rem;
     text-align: left;
+    color: #444f5a;
+}
+
+.Result h2 {
     text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.Result h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #ff9999;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.Result h4 {
+    color: #b2bac2;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.Result p {
+    margin-left: 2.1rem;
+    font-size: 1rem;
 }

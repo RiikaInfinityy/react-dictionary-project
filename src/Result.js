@@ -9,7 +9,7 @@ export default function Result(props) {
         return (
             <div className="Result">
                 <h2>{props.results.word}</h2>
-                <h3>{props.results.phonetic}</h3>
+                <h4>{props.results.phonetic}</h4>
 
                 {props.results.meanings.map(function (meaning, index) {
                     return (
@@ -18,6 +18,7 @@ export default function Result(props) {
                         </div>
                     );
                 })}
+                <br />
             </div>
         );
     } else {
