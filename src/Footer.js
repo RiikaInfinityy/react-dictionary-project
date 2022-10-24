@@ -14,7 +14,7 @@ export default function Footer() {
             <hr />
             <div className="link">
                 <a
-                    href="/"
+                    href="https://github.com/RiikaInfinityy/react-dictionary-project"
                     className="btn btn-light btn-outline-secondary btn-lg btn-edit"
                     target="_blank"
                     alt="Github Open Source Code for Project"
@@ -23,7 +23,7 @@ export default function Footer() {
                     <CodeSquare className="footer-icon" />
                 </a>{" "}
                 <a
-                    href="/"
+                    href="https://rikalim-portfolio-webpage.netlify.app/"
                     className="btn btn-light btn-outline-secondary btn-lg btn-edit"
                     target="_blank"
                     alt="Rika Lim's Front-End Portfolio"

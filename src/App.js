@@ -3,9 +3,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShieldCat } from "@fortawesome/free-solid-svg-icons";
 
-import "./App.css";
-
 import Footer from "./Footer";
+import Dictionary from "./Dictionary";
+
+import "./App.css";
 
 function App() {
     return (
@@ -17,11 +18,9 @@ function App() {
                         beatFade
                         className="main-page-icon"
                     />
-
-                    <h1>DICTIONARY</h1>
-                    <h4>What word do you want to look up?</h4>
                 </header>
             </div>
+            <Dictionary />
             <Footer />
         </div>
     );

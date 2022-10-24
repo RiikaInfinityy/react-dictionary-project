@@ -1,0 +1,18 @@
+.Dictionary {
+    text-align: center;
+}
+
+.Dictionary h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #3e4149;
+}
+
+.btn-format:hover {
+    background-color: #ffc8c8;
+    color: #3e4149;
+}
+
+.search-icon {
+    font-size: 18px;
+}
