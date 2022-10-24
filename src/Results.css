@@ -16,6 +16,7 @@
     font-size: 1.5rem;
     color: #ff9999;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -27,5 +28,16 @@
 
 .Result p {
     margin-left: 2.1rem;
+    margin-right: 5.1em;
     font-size: 1rem;
+}
+
+.Result ul {
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.Result li {
+    margin-left: 2.3rem;
+    font-size: 0.9rem;
 }
