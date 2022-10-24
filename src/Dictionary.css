@@ -3,8 +3,8 @@
 }
 
 .Dictionary h1 {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
     color: #3e4149;
 }
 
@@ -14,5 +14,5 @@
 }
 
 .search-icon {
-    font-size: 18px;
+    font-size: 1.2rem;
 }

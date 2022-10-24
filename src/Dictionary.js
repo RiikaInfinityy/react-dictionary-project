@@ -8,20 +8,22 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
+import Result from "./Result";
+
 import "./Dictionary.css";
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState("");
+    let [results, setResults] = useState(null);
 
     function handleResponse(response) {
-        console.log(response);
+        setResults(response.data[0]);
     }
 
     function search(event) {
         event.preventDefault();
-        alert(`Searching for ${keyword} definition`);
 
-        let apiUrl = "https://api.dictionaryapi.dev/api/v2/entries/en/sunset";
+        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
     }
 
@@ -54,6 +56,7 @@ export default function Dictionary() {
                     </Button>
                 </InputGroup>
             </Form>
+            <Result results={results} />
         </div>
     );
 }
