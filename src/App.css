@@ -1,0 +1,26 @@
+.App {
+    text-align: center;
+    font-family: "Noto Serif Telugu", serif;
+}
+
+.App h1 {
+    margin: 10px auto;
+}
+
+.main-page-icon {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin: 100px auto 30px auto;
+    display: flex;
+    align-items: center;
+    color: #8193b3;
+}
+
+body {
+    background-color: #f6e5f5;
+}
+
+.main-body {
+    margin: auto;
+}
