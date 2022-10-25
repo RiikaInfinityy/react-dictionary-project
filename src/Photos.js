@@ -1,5 +1,4 @@
 import React from "react";
-import { Row } from "react-bootstrap";
 
 export default function Photos(props) {
     if (props.photo) {
