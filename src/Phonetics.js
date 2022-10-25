@@ -11,7 +11,9 @@ export default function Phonetics(props) {
             <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faVolumeHigh} className="audio-format" />
             </a>
-            <span className="phonetic-text">{props.phonetic.text}</span>
+            <span className="phonetic-text">
+                <strong>{props.phonetic.text}</strong>
+            </span>
         </div>
     );
 }

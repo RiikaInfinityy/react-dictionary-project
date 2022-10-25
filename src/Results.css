@@ -1,6 +1,7 @@
 .Result {
     margin-top: 4rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-bottom: 0.5rem;
     text-align: left;
     color: #444f5a;
@@ -9,6 +10,8 @@
 .Result h2 {
     text-transform: capitalize;
     font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 0.8rem;
 }
 
 .Result h3 {
@@ -16,13 +19,12 @@
     font-size: 1.5rem;
     color: #ff9999;
     margin-left: 1.5rem;
-    margin-right: 1.5rem;
     margin-top: 2rem;
 }
 
 .Result p {
-    margin-left: 2.1rem;
-    margin-right: 5.1em;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     font-size: 1rem;
 }
 
@@ -32,8 +34,14 @@
 }
 
 .Result li {
-    margin-left: 2.3rem;
+    display: inline-block;
+    padding-right: 4rem;
     font-size: 0.9rem;
+    color: #ff9999;
+}
+
+.Result section {
+    border-radius: 1rem;
 }
 
 .Phonetics .btn-format {
@@ -43,13 +51,25 @@
 
 .Phonetics .phonetic-text {
     color: #b2bac2;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.7rem;
 }
 
 .Phonetics .audio-format {
     color: #444f5a;
     font-size: 1.2rem;
-    margin-left: 0.5rem;
+    padding-left: 2rem;
+}
+
+.Meaning section {
+    padding: 5rem;
+}
+
+.example-text {
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 0.2rem;
+    color: #7b838b;
+    margin-top: 1rem;
 }

@@ -12,6 +12,7 @@ function App() {
     return (
         <div className="App">
             <div className="main-body">
+                {" "}
                 <header className="App-header">
                     <FontAwesomeIcon
                         icon={faShieldCat}
@@ -20,7 +21,7 @@ function App() {
                     />
                 </header>
             </div>
-            <Dictionary />
+            <Dictionary defaultKeyword="wine" />
             <Footer />
         </div>
     );
