@@ -7,14 +7,21 @@
 
 .main-page-icon {
     text-align: center;
-    font-size: 50px;
-    margin-top: 50px;
-    margin: 100px auto 30px auto;
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin: 9rem auto 3rem auto;
     display: flex;
     align-items: center;
-    color: white;
+    color: #251b37;
 }
 
 .main-body {
     margin: auto;
+}
+
+.main-container {
+    margin: 1% auto;
+    border: 1px solid #ffc8c8;
+    border-radius: 0.5rem;
+    background: linear-gradient(69.8deg, #ffcaca 2.8%, #ffecef 97.8%);
 }

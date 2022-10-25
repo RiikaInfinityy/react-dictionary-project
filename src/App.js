@@ -12,17 +12,19 @@ function App() {
     return (
         <div className="App">
             <div className="main-body">
-                {" "}
-                <header className="App-header">
-                    <FontAwesomeIcon
-                        icon={faShieldCat}
-                        beatFade
-                        className="main-page-icon"
-                    />
-                </header>
+                <div className="main-container">
+                    {" "}
+                    <header className="App-header">
+                        <FontAwesomeIcon
+                            icon={faShieldCat}
+                            beatFade
+                            className="main-page-icon"
+                        />
+                    </header>
+                    <Dictionary defaultKeyword="wine" />
+                    <Footer />
+                </div>
             </div>
-            <Dictionary defaultKeyword="wine" />
-            <Footer />
         </div>
     );
 }

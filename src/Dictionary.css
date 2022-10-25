@@ -6,11 +6,12 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     color: #3e4149;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .Dictionary section {
     background-color: white;
-
     border-radius: 0.3rem;
     padding: 1.2rem;
     margin: 4% auto;

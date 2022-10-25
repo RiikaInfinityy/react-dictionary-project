@@ -33,7 +33,7 @@ export default function Dictionary(props) {
         let pexelsApiKey =
             "563492ad6f91700001000001b8b5b8444a7847539928a9988ef0c95a";
 
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
 
         let headers = { Authorization: `Bearer ${pexelsApiKey}` };
 
@@ -59,7 +59,7 @@ export default function Dictionary(props) {
     if (loaded) {
         return (
             <div className="Dictionary">
-                <h1>DICTIONARY</h1>
+                <h1>What word do you want to look up?</h1>
                 <section className="bg-white bg-opacity-50 shadow-sm">
                     <Form onSubmit={handleSubmit}>
                         <InputGroup className="mb-3 mt-3 ps-4 pe-4">
