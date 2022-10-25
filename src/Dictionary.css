@@ -10,7 +10,8 @@
 
 .Dictionary section {
     background-color: white;
-    border-radius: 1rem;
+
+    border-radius: 0.3rem;
     padding: 1.2rem;
     margin: 4% auto;
     min-width: 90%;

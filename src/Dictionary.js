@@ -16,14 +16,30 @@ export default function Dictionary(props) {
     let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
+    let [photos, setPhotos] = useState(null);
 
-    function handleResponse(response) {
+    function handleDictionaryResponse(response) {
         setResults(response.data[0]);
+    }
+
+    function handlePexelsResponse(response) {
+        setPhotos(response.data.photos);
     }
 
     function search() {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-        axios.get(apiUrl).then(handleResponse);
+        axios.get(apiUrl).then(handleDictionaryResponse);
+
+        let pexelsApiKey =
+            "563492ad6f91700001000001b8b5b8444a7847539928a9988ef0c95a";
+
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+
+        let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+
+        axios
+            .get(pexelsApiUrl, { headers: headers })
+            .then(handlePexelsResponse);
     }
 
     function handleKeywordChange(event) {
@@ -71,7 +87,7 @@ export default function Dictionary(props) {
                         i.e. paris, wine, yoga, coding
                     </div>
                 </section>
-                <Result results={results} />
+                <Result results={results} photos={photos} />
             </div>
         );
     } else {

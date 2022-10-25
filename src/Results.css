@@ -41,12 +41,7 @@
 }
 
 .Result section {
-    border-radius: 1rem;
-}
-
-.Phonetics .btn-format {
-    margin-bottom: 1rem;
-    border-radius: 8rem;
+    border-radius: 0.3rem;
 }
 
 .Phonetics .phonetic-text {
@@ -72,4 +67,10 @@
     padding: 0.2rem;
     color: #7b838b;
     margin-top: 1rem;
+}
+
+.Photos img {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.3rem;
 }

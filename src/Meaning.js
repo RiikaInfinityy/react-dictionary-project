@@ -11,14 +11,12 @@ export default function Meaning(props) {
                 return (
                     <div key={index}>
                         <section className="bg-light shadow-sm mt-4">
-                            <p>
-                                <strong> Definition:</strong>{" "}
-                                {definition.definition}
-                                <br />
-                                <div className="example-text">
-                                    {definition.example}
-                                </div>
-                            </p>
+                            <strong> Definition:</strong>{" "}
+                            {definition.definition}
+                            <br />
+                            <div className="example-text">
+                                {definition.example}
+                            </div>
                             <Synonyms synonyms={definition.synonyms} />
                         </section>
                     </div>
